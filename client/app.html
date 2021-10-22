@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Average of Income</h2>
+    <input class="area"  type="number" id="income" class="floatLabel" name="income" value="1000">
+	
+    <h2>House age</h2>
+    <input class="area"  type="number" id="hs_age" class="floatLabel" name="hs_age" value="1000">
+	</form>
+<form class="form">
+	<h2>Number of rooms</h2>
+    <input class="area"  type="number" id="num_rooms" class="floatLabel" name="num_rooms" value="1000">
+    
+    <h2>Number of bedrooms</h2>
+    <input class="area"  type="number" id="num_bedrooms" class="floatLabel" name="num_bedrooms" value="1000">
+
+    <h2>Area population</h2>
+    <input class="area"  type="number" id="population" class="floatLabel" name="population" value="1000">
+
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</form>
+</body>
+</html>

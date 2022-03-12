@@ -7,7 +7,7 @@ function onClickedEstimatePrice() {
   var population = document.getElementById("population");
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-  var url = "http://127.0.0.1:5000/predict_home_price";
+  var url = "/predict_home_price";
   $.post(
     url,
     {

@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>House Price Prediction</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
-	<link rel="stylesheet" href="app.css">
-</head>
-<body>
-<div class="img"></div>
-<form class="form">
-	<h2>Average of Income</h2>
-    <input class="area"  type="number" id="income" class="floatLabel" name="income" value="1000">
-	
-    <h2>House age</h2>
-    <input class="area"  type="number" id="hs_age" class="floatLabel" name="hs_age" value="1000">
-	</form>
-<form class="form">
-	<h2>Number of rooms</h2>
-    <input class="area"  type="number" id="num_rooms" class="floatLabel" name="num_rooms" value="1000">
-    
-    <h2>Number of bedrooms</h2>
-    <input class="area"  type="number" id="num_bedrooms" class="floatLabel" name="num_bedrooms" value="1000">
-
-    <h2>Area population</h2>
-    <input class="area"  type="number" id="population" class="floatLabel" name="population" value="1000">
-
-	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
-	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
-</form>
-</body>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="fa fa-home"></div>
+      <div class="brand-title">House price prediction</div>
+      <div class="inputs">
+        <label>Average Income</label>
+        <input id="income" type="number" placeholder="USD" />
+        <label>House age</label>
+        <input id="hs_age" type="number" />
+        <label>Number of rooms</label>
+        <input id="num_rooms" type="number" />
+        <label>Number of bedrooms</label>
+        <input id="num_bedrooms" type="number" />
+        <label>Area population</label>
+        <input id="population" type="number" />
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">
+          Estimate Price
+        </button>
+        <div id="uiEstimatedPrice" class="result" style="text-align: center">
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

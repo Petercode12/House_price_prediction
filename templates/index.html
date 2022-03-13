@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/app.js"></script>
+    <link rel="stylesheet" href="../static/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="fa fa-home"></div>
+      <div class="brand-title">House price prediction</div>
+      <div class="inputs">
+        <form action="/predict_home_price">
+          <label>Average Income</label>
+          <input
+            name="income"
+            id="income"
+            type="number"
+            value="100"
+            placeholder="USD"
+          />
+          <label>House age</label>
+          <input name="hs_age" id="hs_age" type="number" value="100" />
+          <label>Number of rooms</label>
+          <input name="num_rooms" id="num_rooms" type="number" value="100" />
+          <label>Number of bedrooms</label>
+          <input
+            name="num_bedrooms"
+            id="num_bedrooms"
+            type="number"
+            value="100"
+          />
+          <label>Area population</label>
+          <input name="population" id="population" type="number" value="100" />
+          <button
+            class="submit"
+            onclick="onClickedEstimatePrice()"
+            type="submit"
+          >
+            Estimate Price
+          </button>
+          <div id="uiEstimatedPrice" class="result" style="text-align: center">
+            <h2>{{p}}</h2>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

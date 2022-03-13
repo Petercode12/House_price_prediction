@@ -30,4 +30,4 @@ def send_report(path):
 if __name__ == "__main__":
     print("Starting Python Flask Server For Home Price Prediction...")
     util.load_saved_artifacts()
-    app.run(debug = True)
+    app.run(debug = False, host='0.0.0.0')
